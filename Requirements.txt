@@ -1,0 +1,23 @@
+Version 1
+[ ] it should have a place to store subs
+[ ] it should have a way to display subs
+[ ] it should have a way to add a sub
+[ ] it should have a way to edit a sub
+[ ] it should have a way to remove a sub
+[ ] It should have a function to add a sub
+[ ] It should have a function to edit a sub
+[ ] It should have a function to remove a sub
+[ ] We should initialize the subs variable with objects
+[ ] The add function should add objects
+[ ] The edit function should edit objects
+[ ] Subs should have the following properties:
+- Name
+- Website
+- Start Date
+- End Date (can be multiple depending on milestone)
+- Recurring Fee (Monthly or Annual)
+
+
+
+
+
