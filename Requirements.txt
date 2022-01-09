@@ -1,15 +1,15 @@
-Version 1
+# Version 0.1
 [X] it should have a place to store subs
 [X] it should have a way to display subs
 [X] it should have a way to add a sub
-[ ] it should have a way to edit a sub
-[ ] it should have a way to remove a sub
-[ ] It should have a function to add a sub
-[ ] It should have a function to edit a sub
-[ ] It should have a function to remove a sub
-[ ] We should initialize the subs variable with objects
-[ ] The add function should add objects
-[ ] The edit function should edit objects
+[X] it should have a way to edit a sub
+[X] it should have a way to remove a sub
+[X] It should have a function to add a sub
+[X] It should have a function to edit a sub
+[X] It should have a function to remove a sub
+[X] We should initialize the subs variable with objects
+[X] The add function should add objects
+[X] The edit function should edit objects
 [X] Subs should have the following properties:
 - subsName: String
 - subsUrl: String, url with/without https/https should be accepted
@@ -18,7 +18,9 @@ Version 1
 - recurFee: Number, amount in minor units
 - recurFeeCurrency: String, currency code
 
+# Version 0.2
 
+[ ] 
 
-
+## DOM
 
