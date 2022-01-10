@@ -2,36 +2,42 @@ function HelloWorld() {
   alert("Hello World!");
 }
 
-var button = document.getElementById("enter");
-var input = document.getElementById("subInput");
-var ul = document.getElementById("sub-ul");
+const button = document.getElementById("enter");
+const input = document.getElementById("subInput");
+const ul = document.getElementById("sub-ul");
 
 function inputLength() {
-    return input.value.length;
+  return input.value.length;
 }
 
 function createListElement() {
-    var li = document.createElement("li");
-    var btn = document.createElement("button");
-    btn.textContent = "Remove";
-    btn.id = "removeBtn";
-    li.appendChild(document.createTextNode(input.value));
-    li.appendChild(btn);
-    ul.appendChild(li);
-    input.value = "";
+  var li = document.createElement("li");
+  li.id = `sub-${input.value}`;
+  li.appendChild(document.createTextNode(input.value));
+  ul.appendChild(li);
+  input.value = "";
+
+  var btn = document.createElement("button");
+  btn.textContent = "Delete";
+  li.appendChild(btn);
+  btn.onclick=removeParent;
 }
 
 function addListAfterClick() {
-    if (inputLength() > 0) {
-        createListElement();
-    }
+  if (inputLength() > 0) {
+      createListElement();
+  }
 }
 
 function addListAfterKeypress(event) {
-    if (inputLength() > 0 && event.keyCode === 13) {
-      createListElement();
-    }
+  if (inputLength() > 0 && event.keyCode === 13) {
+    createListElement();
+  }
 } 
+
+function removeParent(event) {
+  event.target.parentNode.remove();
+}
 
 button.addEventListener("click", addListAfterClick);
 input.addEventListener("keypress", addListAfterKeypress);
