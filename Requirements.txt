@@ -20,6 +20,9 @@
 
 # Version 0.2
 
+[ ] First entry should allow a way to enter all sub properties
+[ ] Every sub should be unique
+[ ] UI should display all props in one view
 [ ] Sub storage should be persistent (i.e. in a database)
 
 ## DOM

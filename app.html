@@ -52,8 +52,14 @@
     <main class="flex-shrink-0">
         <div class="container">
             <h2>Your Subs</h2>
-            <input id="subInput" type="text" placeholder="enter subscription name">
-            <button id="enter">Enter</button>
+            <p>Subscription Name</p><input name="subsName" id="subInput" type="text" placeholder="enter subscription name">
+            <p>Subscription Website</p><input name="subsUrl" id="subUrl" type="text" placeholder="enter subscription URL">
+            <p>Start Date</p><input name="startDate" id="subStart" type="text" placeholder="enter subscription start date">
+            <p>End Date</p><input name="endDate" id="subEnd" type="text" placeholder="enter subscription end date">
+            <p>Subscription Fee</p><input name="recurFee" id="subFee" type="text" placeholder="enter subscription fees">
+            <p>Subscription Fee Currency</p><input name="recurFeeCurrency" id="subCurrency" type="text" placeholder="enter subscription fee currency">
+            <p>Subscription Fee Period</p><input name="recurFeePeriod" id="subPeriod" type="text" placeholder="enter subscription fee period">
+            <br><button id="enter">Enter</button>
             <ul id="sub-ul">
                 
             </ul>
